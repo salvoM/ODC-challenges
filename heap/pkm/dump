@@ -1,0 +1,6 @@
+[x] Starting local process './pkm_nopie'
+[+] Starting local process './pkm_nopie': pid 4707
+[*] running in new terminal: ['/usr/bin/gdb', '-q', './pkm_nopie', '4707', '-x', '/tmp/pwncormslbp.gdb']
+[x] Waiting for debugger
+[+] Waiting for debugger: Done
+[!] Waiting for gdb...[*] Process './pkm_nopie' stopped with exit code -9 (SIGKILL) (pid 4707)

@@ -1,0 +1,6 @@
+*.py
+core
+.gdb_history
+*.i32
+*.i64
+.vscode

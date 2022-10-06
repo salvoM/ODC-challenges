@@ -1,0 +1,32 @@
+file ./john 
+b* 0x0804928a
+# b* 0x08049289
+command 1  
+set $val=0
+# hb * 0x08049658
+hb * 0x08049687
+hb * 0x08049821  
+    command 2
+    set logging on
+    p *(short*)($ebp-0x7c)
+    set logging off
+    c
+    end
+    command 3
+    # set logging on
+    # print $val
+    # set logging off
+    #
+    c
+    end
+disable br 1
+c
+end
+run `cat tentative_flag`
+
+# command 4
+# set logging on
+# print $val
+# set logging off
+# c
+# end
